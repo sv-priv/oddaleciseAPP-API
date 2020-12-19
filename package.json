@@ -1,0 +1,21 @@
+{
+  "name": "oddaleciseapp-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "kill-port": "^1.6.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8",
+    "mongose": "0.0.2-security",
+    "nodemon": "^2.0.6"
+  }
+}
