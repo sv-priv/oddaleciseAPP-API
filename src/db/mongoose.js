@@ -1,7 +1,8 @@
 // const mongodb = require("mongodb").MongoClient;
 const mongoose  = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/oddaleciseapp-api', {
+//mongodb+srv://velkoskis:<oddalecise>@oddaleciseapp-api.y3fc4.mongodb.net/<oddalecise>?retryWrites=true&w=majority
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/oddaleciseapp-api', {
     useNewUrlParser: true,
     useCreateIndex: true
 })
