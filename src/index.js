@@ -26,6 +26,11 @@ app.use(express.json())
 //     res.send("test");
 // })
 
+app.get('/',(req,res)=>
+{
+    res.send("hello")
+})
+
 
 app.get('/lakes',(req, res) => {
 
