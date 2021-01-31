@@ -1,13 +1,15 @@
-// const mongodb = require("mongodb").MongoClient;
+//const mongodb = require("mongodb").MongoClient;
 const mongoose  = require('mongoose');
 
-//mongodb+srv://velkoskis:<oddalecise>@oddaleciseapp-api.y3fc4.mongodb.net/<oddalecise>?retryWrites=true&w=majority
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/oddaleciseapp-api', {
+mongoose.connect( 'mongodb://mongo:27017/oddaleciseapp-api', {
     useNewUrlParser: true,
     useCreateIndex: true
 })
 
-url = 'mongodb://127.0.0.1:27017/'
+
+//mongodb+srv://velkoskis:<oddalecise>@oddaleciseapp-api.y3fc4.mongodb.net/<oddalecise>?retryWrites=true&w=majority
+
+//url = 'mongodb://mongo:27017/'
 //string name, definition for defining fields
 
 
@@ -32,10 +34,12 @@ url = 'mongodb://127.0.0.1:27017/'
 // }).catch(()=>{
 
 // })
+// const csvFilePath1 = '../../ezeraFilter.csv';
+
 
 // const csvtojson = require("csvtojson");
 // csvtojson()
-// .fromFile("../../ezeraFilter.csv")
+// .fromFile(csvFilePath1)
 // .then(csvData => {
 //   console.log(csvData);
 
@@ -58,7 +62,7 @@ url = 'mongodb://127.0.0.1:27017/'
 //     );
 //   });
 
-//   csvtojson()
+// csvtojson()
 // .fromFile("../../planiniFilter.csv")
 // .then(csvData => {
 //   console.log(csvData);
@@ -81,4 +85,5 @@ url = 'mongodb://127.0.0.1:27017/'
 //       }
 //     );
 //   });
+
 
